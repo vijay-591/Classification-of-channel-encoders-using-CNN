@@ -1,0 +1,21 @@
+{%extends 'users/user_base.html'%}
+
+{%load static%}
+{%block contents%}
+<section id="hero" class="d-flex align-items-center">
+    <br><br><br>
+    <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
+        <h1>Classification of Channel Encoders Using Convolutional Neural Network</h1>
+        <h2>To test encode please eneter a proper string to get its encoded Values. </h2>
+        <br>
+          <form action="{%url 'sampleencodestring'%}" method="POST"  style="width:100%">
+             {% csrf_token %}
+            <label for="">Enter  a String</label><textarea name="msgText" id="" cols="30" rows="3"></textarea><br>
+              <button type="submit" value="Submit">Submit</button>
+        </form>
+        <img src="{% static 'img/hero-img.png' %}" class="img-fluid hero-img" alt="" data-aos="zoom-in"
+             data-aos-delay="150">
+    </div>
+
+</section>
+{%endblock%}

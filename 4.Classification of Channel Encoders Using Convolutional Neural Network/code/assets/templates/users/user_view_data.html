@@ -1,0 +1,25 @@
+{%extends 'users/user_base.html'%}
+
+{%load static%}
+{%block contents%}
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <br><br><br>
+    <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
+        <h1>Classification of Channel Encoders Using Convolutional Neural Network</h1>
+        <h2>In digital communication systems, channel encoders
+            play a crucial role in rectifying random errors introduced by the
+            channel. </h2>
+        <h2>View Channel Encoder Dataset </h2>
+          <h2></h2>
+                    {{data|safe}}
+
+    </div>
+
+</section>
+{%endblock%}
