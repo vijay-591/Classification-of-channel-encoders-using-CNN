@@ -1,4 +1,4 @@
-📡 Classification of Channel Encoders Using CNN
+## Classification of Channel Encoders Using CNN
 
 This project focuses on classifying channel encoding techniques using a Convolutional Neural Network (CNN).
 It integrates Machine Learning (Deep Learning) with a Django web application to provide an end-to-end solution for uploading data, running predictions, and viewing results.
